@@ -1,2 +1,0 @@
-# pedadiSchool
-InstitutoPedadi v2
