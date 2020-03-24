@@ -1,1 +1,33 @@
-<p>navbar works!</p>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container d-flex align-items-center">
+        <a class="navbar-brand" href="index.html">Kiddos</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+        <span></span> Menu
+      </button>
+        <div class="collapse navbar-collapse" id="ftco-nav">
+            <ul class="navbar-nav ml-auto navText2">
+                <li class="nav-item"><a [routerLink]="['home']" routerLinkActive="navTextActive" routerLinkActiveOptions="{exact:true}" class="nav-link pl-0 navText">Home</a></li>
+                <li class="nav-item"><a [routerLink]="['about']" routerLinkActive="navTextActive" routerLinkActiveOptions="{exact:true}" class="nav-link pl-0 navText">About</a></li>
+                <li class="nav-item"><a href="teacher.html" class="nav-link">Teacher</a></li>
+                <li class="nav-item"><a href="courses.html" class="nav-link">Courses</a></li>
+                <li class="nav-item"><a href="pricing.html" class="nav-link">Pricing</a></li>
+                <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
+                <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link navText" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link navText" href="#">Link</a>
+            </li>
+        </ul>
+
+    </div>
+</nav> -->
