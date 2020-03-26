@@ -6,6 +6,7 @@ import { NgModule } from '@angular/core';
 import { APP_ROUTING } from './app.routes';
 
 // Servicios
+import { NavbarService } from './services/localServices/navbar.service';
 
 // Componentes
 import { NavbarComponent } from './components/navbar/navbar.component';
@@ -28,7 +29,9 @@ import { AboutComponent } from './pages/about/about.component';
     BrowserModule,
     APP_ROUTING
   ],
-  providers: [],
+  providers: [
+    NavbarService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
