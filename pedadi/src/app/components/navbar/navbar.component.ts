@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { NavbarService, Element } from '../../services/localServices/navbar.service';
+import { NavbarService, NavbarElement } from '../../services/localServices/navbar.service';
 
 
 @Component({
@@ -8,13 +8,13 @@ import { NavbarService, Element } from '../../services/localServices/navbar.serv
   styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent implements OnInit {
-  elements: Element[] = [];
+  elements: NavbarElement[] = [];
 
+  // tslint:disable-next-line: variable-name
   constructor(private _navbarService: NavbarService) {}
 
   ngOnInit(): void {
-    this.elements = this._navbarService.getElements();
-    console.log( this.elements );
+    this.elements = this._navbarService.getNavbarElements();
   }
 
 }

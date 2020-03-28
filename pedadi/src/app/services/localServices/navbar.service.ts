@@ -4,7 +4,7 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class NavbarService {
-  private elements: Element[] = [
+  private elements: NavbarElement[] = [
     {
       nombre: 'Inicio',
       link: '/home'
@@ -18,12 +18,12 @@ export class NavbarService {
 
   constructor() {}
 
-  getElements(): Element[] {
+  getNavbarElements(): NavbarElement[] {
     return this.elements;
   }
 }
 
-export interface Element {
+export interface NavbarElement {
   nombre: string;
   link: string;
 }

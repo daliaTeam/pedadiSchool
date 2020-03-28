@@ -1,0 +1,18 @@
+    .responsiveImage {
+        height: 100%;
+        max-height: 600px;
+    }
+    
+    .responsiveCartel {
+        width: 100%;
+        max-width: 400px;
+    }
+    
+    .colorPrimary {
+        color: #1eaaf1 !important;
+    }
+    
+    .colorSecondary {
+        color: #fda638 !important;
+    }
+    /* Estilo de tarjetas */

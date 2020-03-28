@@ -5,8 +5,12 @@ import { NgModule } from '@angular/core';
 // Rutas
 import { APP_ROUTING } from './app.routes';
 
-// Servicios
+// Servicios locales
 import { NavbarService } from './services/localServices/navbar.service';
+import { HomeService } from './services/localServices/home.service';
+import { FooterService } from './services/localServices/footer.service';
+
+
 
 // Componentes
 import { NavbarComponent } from './components/navbar/navbar.component';
@@ -30,7 +34,9 @@ import { AboutComponent } from './pages/about/about.component';
     APP_ROUTING
   ],
   providers: [
-    NavbarService
+    NavbarService,
+    HomeService,
+    FooterService
   ],
   bootstrap: [AppComponent]
 })
