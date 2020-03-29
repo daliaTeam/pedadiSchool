@@ -140,7 +140,7 @@ input[type=password]:focus {
 
 input[type=text]:placeholder,
 input[type=email]:placeholder,
-input[tipe=password]:placeholder {
+input[type=password]:placeholder {
     color: #cccccc;
 }
 
