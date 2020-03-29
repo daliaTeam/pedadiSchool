@@ -1,22 +1,43 @@
+// Modulos Globales
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
-import { AppComponent } from './app.component';
+// Rutas
+import { APP_ROUTING } from './app.routes';
+
+// Servicios locales
+import { NavbarService } from './services/localServices/navbar.service';
+import { HomeService } from './services/localServices/home.service';
+import { FooterService } from './services/localServices/footer.service';
+
+// Componentes
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { AppComponent } from './app.component';
+
+// Paginas libres
 import { HomeComponent } from './pages/home/home.component';
+import { AboutComponent } from './pages/about/about.component';
+import { LoginComponent } from './pages/login/login.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     FooterComponent,
-    HomeComponent
+    HomeComponent,
+    AboutComponent,
+    LoginComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    APP_ROUTING
   ],
-  providers: [],
+  providers: [
+    NavbarService,
+    HomeService,
+    FooterService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
