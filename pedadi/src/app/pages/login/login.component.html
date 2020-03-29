@@ -1,0 +1,23 @@
+<div class="mt-5 animated fadeInUp">
+
+    <div class="mt-5 wrapper fadeInDown">
+        <div id="formContent">
+            <div class="fadeIn first mt-3 mb-3">
+                <img src="https://firebasestorage.googleapis.com/v0/b/bdinstitutopedadi.appspot.com/o/loginLogo.jpg?alt=media&token=26daabb1-ffec-4480-985d-6d650b9ff9f3" id="icon" alt="User Icon">
+            </div>
+            <form class="form-horizontal">
+                <input type="email" class="fadeIn second" name="login" placeholder="Usuario" required>
+                <input type="password" id="password" class="fadeIn third mb-2" name="login" placeholder="Contraseña" required>
+                <button class="btn btn-primary btn-lg mb-3">Iniciar Sesion</button>
+            </form>
+            <div id="formFooter">
+                <a class="underlineHover" [routerLink]="['/home']">Ir al sitio principal</a>
+            </div>
+
+        </div>
+
+    </div>
+    <div class="mt-5">
+        <app-footer></app-footer>
+    </div>
+</div>

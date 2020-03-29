@@ -13,6 +13,10 @@ export class NavbarService {
       nombre: 'Nosotros',
       link: '/about'
     },
+    {
+      nombre: 'Inicia sesión',
+      link: '/login'
+    },
 
   ];
 
