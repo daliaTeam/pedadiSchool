@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { HomeService, CarrouselElements, BenefitElements } from '../../services/localServices/home.service';
+import { HomeService, CarrouselElements, BenefitElements, CardElements } from '../../services/localServices/home.service';
 
 
 @Component({
@@ -11,6 +11,7 @@ export class HomeComponent implements OnInit {
   elements: CarrouselElements[] = [];
   benefit: BenefitElements[] = [];
   bennefit: BenefitElements[] = [];
+  alianzas: CardElements[] = [];
 
   // tslint:disable-next-line: variable-name
   constructor(private _homeService: HomeService) { }
@@ -19,6 +20,7 @@ export class HomeComponent implements OnInit {
     this.elements = this._homeService.getCarrouselElements();
     this.benefit = this._homeService.getBeneficiosUno();
     this.bennefit = this._homeService.getBeneficiosDos();
+    this.alianzas = this._homeService.getAlianzas();
   }
 
 }

@@ -61,6 +61,26 @@ export class HomeService {
       icono: 'fas fa-external-link-alt fa-2x'
     },
   ];
+  private alianzas: CardElements[] = [
+    {
+      imagen: 'https://firebasestorage.googleapis.com/v0/b/bdinstitutopedadi.appspot.com/o/alianza1.png?alt=media&token=e2345507-3e95-4a27-b2d4-68f634998bfb',
+      titulo: 'UTVCO',
+      descripcion: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos eligendi consequatur tempo',
+      link: 'http://utvco.edu.mx/'
+    },
+    {
+      imagen: 'https://firebasestorage.googleapis.com/v0/b/bdinstitutopedadi.appspot.com/o/alianza2.png?alt=media&token=a4ccd1cb-0fb6-4db3-9d59-4d95fe409cea',
+      titulo: 'IODEMC',
+      descripcion: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos eligendi consequatur tempo',
+      link: 'https://www.oaxaca.gob.mx/iodemc/'
+    },
+    {
+      imagen: 'https://firebasestorage.googleapis.com/v0/b/bdinstitutopedadi.appspot.com/o/alianza3.png?alt=media&token=d7b8c1be-0c6b-429a-83e2-97ea561e7ef4',
+      titulo: 'BUSINESSKIDS',
+      descripcion: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos eligendi consequatur tempo',
+      link: 'http://www.businesskids.com.mx/'
+    },
+  ];
 
 
   constructor() { }
@@ -72,6 +92,9 @@ export class HomeService {
   }
   getBeneficiosDos(): BenefitElements[] {
     return this.beneficiostwo;
+  }
+  getAlianzas():CardElements[]{
+    return this.alianzas;
   }
 
 }
@@ -85,4 +108,10 @@ export interface CarrouselElements {
 export interface BenefitElements {
   beneficio: string;
   icono: string;
+}
+export interface CardElements {
+  imagen: string;
+  titulo: string;
+  descripcion: string;
+  link: string;
 }
