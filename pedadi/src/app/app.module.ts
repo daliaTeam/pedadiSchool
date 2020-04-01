@@ -9,6 +9,8 @@ import { APP_ROUTING } from './app.routes';
 import { NavbarService } from './services/localServices/navbar.service';
 import { HomeService } from './services/localServices/home.service';
 import { FooterService } from './services/localServices/footer.service';
+import { AboutService } from './services/localServices/about.service';
+
 
 // Componentes
 import { NavbarComponent } from './components/navbar/navbar.component';
@@ -36,7 +38,8 @@ import { LoginComponent } from './pages/login/login.component';
   providers: [
     NavbarService,
     HomeService,
-    FooterService
+    FooterService,
+    AboutService
   ],
   bootstrap: [AppComponent]
 })
