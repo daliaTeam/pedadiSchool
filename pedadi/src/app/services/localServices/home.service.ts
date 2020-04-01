@@ -82,6 +82,26 @@ export class HomeService {
     },
   ];
 
+ private nivelesEducativos: CardElements[] = [
+    {
+      imagen: 'https://firebasestorage.googleapis.com/v0/b/bdinstitutopedadi.appspot.com/o/alianza1.png?alt=media&token=e2345507-3e95-4a27-b2d4-68f634998bfb',
+      titulo: 'UTVCO',
+      descripcion: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos eligendi consequatur tempo',
+      link: 'http://utvco.edu.mx/'
+    },
+    {
+      imagen: 'https://firebasestorage.googleapis.com/v0/b/bdinstitutopedadi.appspot.com/o/alianza2.png?alt=media&token=a4ccd1cb-0fb6-4db3-9d59-4d95fe409cea',
+      titulo: 'IODEMC',
+      descripcion: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos eligendi consequatur tempo',
+      link: 'https://www.oaxaca.gob.mx/iodemc/'
+    },
+    {
+      imagen: 'https://firebasestorage.googleapis.com/v0/b/bdinstitutopedadi.appspot.com/o/alianza3.png?alt=media&token=d7b8c1be-0c6b-429a-83e2-97ea561e7ef4',
+      titulo: 'BUSINESSKIDS',
+      descripcion: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos eligendi consequatur tempo',
+      link: 'http://www.businesskids.com.mx/'
+    },
+  ];
 
   constructor() { }
   getCarrouselElements(): CarrouselElements[] {
@@ -93,8 +113,11 @@ export class HomeService {
   getBeneficiosDos(): BenefitElements[] {
     return this.beneficiostwo;
   }
-  getAlianzas():CardElements[]{
+  getAlianzas(): CardElements[] {
     return this.alianzas;
+  }
+  getNivelesEducativos(): CardElements[] {
+    return this.nivelesEducativos;
   }
 
 }

@@ -1,5 +1,4 @@
 <div class="mt-5 animated fadeInUp">
-
     <!-- Carrusel-->
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
@@ -26,10 +25,7 @@
             </a>
         </div>
     </div>
-
     <!-- Que ofrecemos -->
-
-
     <div class="container mt-5 ">
         <div class="row">
             <div class="col-sm-12 col-md-6 ">
@@ -68,7 +64,6 @@
         </div>
     </div>
 
-
     <!-- niveles educativos -->
     <div class="text-center mt-5">
         <h1 class="colorPrimary">Nuestros <span class="colorSecondary"> niveles educativos</span>
@@ -76,38 +71,17 @@
     </div>
 
     <body>
-        <div class="card">
-            <img src="https://source.unsplash.com/user/diegyms/300x200" alt="vitateach" />
+        <div class="card" *ngFor="let niveles of nivelesEducativos">
+            <img [src]="niveles.imagen" alt="vitateach" />
             <div class="card-body">
-                <h6>Vitateach</h6>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, sit? Nesciunt porro.adipisicing elit. Sed, sit? Nesciunt porro.</p>
+                <h6> {{niveles.titulo}} </h6>
+                <p> {{niveles.descripcion}} </p>
                 <div>
-                    <a href="#">Read More</a>
-                </div>
-            </div>
-        </div>
-        <div class="card">
-            <img src="https://source.unsplash.com/user/frantic/300x200" alt="vitateach" />
-            <div class="card-body">
-                <h6>Vitateach</h6>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, sit? Nesciunt porro.adipisicing elit. Sed, sit? Nesciunt porro.</p>
-                <div>
-                    <a href="#">Read More</a>
-                </div>
-            </div>
-        </div>
-        <div class="card">
-            <img src="https://source.unsplash.com/user/5tep5/300x200" />
-            <div class="card-body">
-                <h6>Vitateach</h6>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, sit? Nesciunt porro.adipisicing elit. Sed, sit? Nesciunt porro.</p>
-                <div>
-                    <a href="#">Read More</a>
+                    <a [href]="niveles.link">Ir al sitio</a>
                 </div>
             </div>
         </div>
     </body>
-
 
     <div class="text-center mt-5">
         <h1 class="colorPrimary">Nuestras <span class="colorSecondary"> alianzas</span>
@@ -121,12 +95,10 @@
                 <h6> {{alianza.titulo}} </h6>
                 <p> {{alianza.descripcion}} </p>
                 <div>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos eligendi consequatur tempore voluptatibus in quae ullam impedit recusandae aliquam ab quia placeat at a, tenetur similique delectus fugiat eius? Earum!
                     <a [href]="alianza.link">Ir al sitio</a>
                 </div>
             </div>
         </div>
-
     </body>
 
     <div class="container mt-5">
@@ -138,30 +110,20 @@
             </div>
             <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
                 <div class="facebook-responsive">
-
                     <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FPedadi%2F&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="340" height="500"
                         style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
                 </div>
-
             </div>
-
             <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
                 <div class="facebook-responsive">
 
                     <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FPedadi%2F&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="340" height="500"
                         style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
                 </div>
-
             </div>
-
         </div>
     </div>
 
 
-
-    <!-- footer -->
-    <div class="mt-5">
-        <app-footer></app-footer>
-    </div>
 </div>
 <!-- Footer -->

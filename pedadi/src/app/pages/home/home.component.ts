@@ -12,6 +12,7 @@ export class HomeComponent implements OnInit {
   benefit: BenefitElements[] = [];
   bennefit: BenefitElements[] = [];
   alianzas: CardElements[] = [];
+  nivelesEducativos: CardElements[] = [];
 
   // tslint:disable-next-line: variable-name
   constructor(private _homeService: HomeService) { }
@@ -21,6 +22,7 @@ export class HomeComponent implements OnInit {
     this.benefit = this._homeService.getBeneficiosUno();
     this.bennefit = this._homeService.getBeneficiosDos();
     this.alianzas = this._homeService.getAlianzas();
+    this.nivelesEducativos = this._homeService.getNivelesEducativos();
   }
 
 }

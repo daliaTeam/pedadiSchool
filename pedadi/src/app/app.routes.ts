@@ -12,4 +12,4 @@ const APP_ROUTES: Routes = [
     { path: '**', component: HomeComponent },
 ];
 
-export const APP_ROUTING = RouterModule.forRoot( APP_ROUTES );
+export const APP_ROUTING = RouterModule.forRoot( APP_ROUTES, { scrollPositionRestoration: 'enabled' } );
