@@ -23,13 +23,38 @@ export class FooterService {
 }
   ];
 
+  private redSocial: RedSocial[] = [
+    {
+      icono: 'fab fa-facebook fa-2x',
+      link: 'https://www.facebook.com'
+    },
+    {
+      icono: 'fab fa-twitter fa-2x',
+      link: 'https://www.twitter.com'
+    },
+    {
+      icono: 'fab fa-instagram fa-2x',
+      link: 'https://www.instagram.com'
+    },
+    {
+      icono: 'fab fa-youtube fa-2x',
+      link: 'https://www.youtube.com'
+    },
+  ];
+
   constructor() {}
   getReferencia(): Referencias[] {
     return this.refer;
   }
+  getRedesSociales(): RedSocial[] {
+    return this.redSocial;
+  }
 }
-
 export interface Referencias {
   icono: string;
   descripcion: string;
+}
+export interface RedSocial {
+  icono: string;
+  link: string;
 }
